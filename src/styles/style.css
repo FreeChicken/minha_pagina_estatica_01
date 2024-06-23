@@ -31,7 +31,7 @@ nav {
 #menu li a {
     text-decoration: none;
     color: white;
-    
+
 }
 
 #menu li a:hover {
@@ -62,7 +62,7 @@ nav {
 .center {
     text-align: center;
     margin: 20px 0;
-    margin-right:400px;
+    margin-right: 400px;
     margin-left: 400px;
 }
 
@@ -88,38 +88,76 @@ article.conteudo div.container p {
 }
 
 form {
+    width: 35vw;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    width: 30%;
+    gap: 1rem;
 }
 
-form label {
-    margin-top: 10px;
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-form input,
-form textarea,
-
-form button {
-    
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-}
-
-form button {
-    background-color: blueviolet;
-    color: white;
+input,
+textarea,
+button {
+    border-radius: 8px;
     border: none;
-    cursor: pointer;
-    font-family: "Press Start 2P", system-ui;
-    width: auto;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(220, 220, 220);
+    resize: none;
+    outline: none;
+    border: 2px solid transparent;
+    font-size: 16px;
 }
 
-form button:hover {
-    background-color: darkviolet;
+input:focus,
+textarea:focus {
+    border: 2px solid blueviolet;
+}
+
+button {
+    width: auto;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "Press Start 2P", system-ui;
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+}
+
+button:hover {
+    background-color: rgb(188, 141, 233) ;
+    color: gray;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+#mapa {
+    width: 400px;
+    aspect-ratio: 16/9;
+}
+
+
+@media screen and (max-width: 600px) {
+    .conteudo {
+        min-width: 400px;
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .paragrafos {
+        font-size: 14px;
+        width: 80%;
+    }
+}
+
+#assunto {
+    size: 50px;
 }
 
 .map-container {
@@ -130,7 +168,7 @@ form button:hover {
     width: 100%;
     height: 400px;
     border: none;
-    
+
 }
 
 #endereco {
@@ -146,8 +184,8 @@ form button:hover {
 .redes {
     font-size: 10px;
     text-align: center;
-    margin-top: 20px; 
-    padding: 10px; 
+    margin-top: 20px;
+    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
