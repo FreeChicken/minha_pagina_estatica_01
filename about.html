@@ -1,45 +1,50 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who am I?</title>
     <link rel="icon" type="image/x-icon" href="/src/assets/favicon/favicontrole.ico">
-    <!--<a href="https://www.flaticon.com/br/icones-gratis/nintendo" title="nintendo ícones">Nintendo ícones criados por Freepik - Flaticon</a>-->
-    
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <ul>
-        <li><a href="index.html">inicio</a></li>
-        <li><a href="about.html">sobre</a></li>
-        <li><a href="contact.html">contato</a></li>
-    </ul>
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>
+    </nav>
+    <article class="conteudo">
+        <div class="container about-container">
+            <img id="aboutimg" src="/src/assets/images/Etzinbilu.gif" alt="Bilu">
+            <div class="text-container">
+                <h1>It's a me, Anderson!</h1>
+                <p>Me chamo Anderson, tenho muitos anos de idade e sou estudante de programação. 
+                    Atualmente estudo na Generation Brasil, onde estou aprendendo diversas tecnologias 
+                    (inclusive isso aqui faz parte de uma das atividades do curso &#128522;).
+                    Estou aprendendo várias coisas, como Java, Spring, React, HTML, CSS, e mais uma porrada de coisas.
+                    
+                    Espero poder me chamar de desenvolvedor em breve.</p>
+            </div>
+            
+        </div>
+        <h4 class="center">Fique com essa pérola!</h4>
+        <div class="center">
+            <iframe class="perola" width="560" height="315" src="https://www.youtube.com/embed/VxRpkfcXEpA?si=1nrL7P8g9hxOm1P_"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </article>
 
-
-    <h1>It's a me, Anderson!</h1>
-
-    <p>Me chamo Anderson, tenho muitos anos de idade e sou estudante de programação.
-        Atualmente estudo na Generation Brasil, onde estou aprendendo diversas tecnologias
-        (inclusive isso aqui faz parte de uma das atividades do curso &#128522;).
-        To aprendendo varias coisas, como Java, Spring, React, HTML, CSS, e mais uma porrada de coisas.
-        Espero poder me chamar de desenvolvedor em breve.
-    </p>
-
-    <img src="/src/assets/images/Etzinbilu.gif" alt="Bilu">
-
-
-
-    <h2> Fique com essa pérola!</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VxRpkfcXEpA?si=1nrL7P8g9hxOm1P_"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <footer>Aqui embaixo também não :|</footer>
-
-
+    <footer class="redes"><a href="https://www.linkedin.com/in/adsalves/">Meu LinkedIn</a>
+        <a href="https://github.com/FreeChicken">Meu Github</a></footer>
 </body>
 
 </html>

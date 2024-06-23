@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="icon" type="image/x-icon" href="/src/assets/favicon/favicontrole.ico">
-    <!--<a href="https://www.flaticon.com/br/icones-gratis/nintendo" title="nintendo ícones">Nintendo ícones criados por Freepik - Flaticon</a>-->
-    
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <ul class="menu">
-            <li><a href="index.html">inicio</a></li>
-            <li><a href="about.html">sobre</a></li>
-            <li><a href="contact.html">contato</a></li>
+        <ul id="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="contact.html">Contato</a></li>
         </ul>
-        <img src="/src/assets/images/welcome.gif" alt="Bem vindo!">
     </nav>
-    <h1>Olá, welcome to página do Anderson.</h1>
-    <p> Esta página é destinada a fazer uma pequena introdução sobre o Anderson, nela você vai encontar uma breve
-        descrição sobre ele e quais tecnologias ele sabe (ou acha que sabe).</p>
+    <article class="conteudo">
+        <div class="container">
+            <div>
+                <h1>Olá, welcome to página do Anderson</h1>
+            </div>
+            <img id="welcomeimg" src="/src/assets/images/welcome.gif" alt="Bem vindo!">
+        </div>
+        <div class="center">
+            <p>Esta página é destinada a fazer uma pequena introdução sobre o Anderson, nela você vai
+                encontrar uma breve descrição sobre ele e quais tecnologias ele sabe (ou acha que sabe).
+            </p>
+        </div>
+    </article>
 
-    <footer>Tem nada aqui embaixo :)</footer>
-
-
+    <footer class="redes"><a href="https://www.linkedin.com/in/adsalves/">Meu LinkedIn</a>
+        <a href="https://github.com/FreeChicken">Meu Github</a></footer>
 </body>
 
 </html>
